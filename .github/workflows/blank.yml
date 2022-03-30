@@ -1,8 +1,9 @@
 name: Show File System
 
 on:
-  push:
-    branches: [ main ]
+  pull_request:
+    types:
+      - closed
 
 jobs:
   build:
